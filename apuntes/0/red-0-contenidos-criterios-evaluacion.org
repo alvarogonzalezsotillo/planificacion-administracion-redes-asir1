@@ -24,10 +24,10 @@
   - No se puede usar la red cableada del centro 
   - Se usará la Wifi
 ** Libro de texto
-+ 
++ *Planificación y Administración de Redes*
 + Editorial: Garceta
-+ Autor: 
-+ ISBN: 
++ Autor: Juan Manuel Castro Ramos, José Ramón Rodríguez Sánchez
++ ISBN: 978-84-1545-296-6
 [[file:portada-libro.gif]]
 
 * Entrega de Trabajos
@@ -69,9 +69,10 @@
   - Puntualidad, interés, preguntas al profesor, puesta en común de resultados, comportamiento...
 - Exámenes
   - Dos parciales y un final por evaluación
-  - Se necesita un mínimo de 3,5 en cada parcial para hacer media
+  - Se necesita un mínimo de /3,5/ en cada parcial para hacer media
 - Entrega de trabajos
   - Individuales
+  - Un trabajo entregado fuera de plazo tiene una nota máxima de /6/
 
 ** Cálculo de la nota
 - Nota de la evaluación
@@ -88,185 +89,180 @@ La mayor de:
 
 - Las notas pueden calcularse con [[file:calculo-notas/calculo-notas.html?evaluaciones=2][el calculador de notas.]]
 
-
+  
 
 * Temas del libro de referencia
 
-** Instalación y configuración de MySQL
-   - El SGBD MySQL
-     - Funciones de MySQL
-     - Arquitectura de MySQL
-   - Instalación desde el gestor de paquetes yum
-     - Comprobar la instalación correcta a través de yum
-   - Instalación compilando el código fuente 
-   - Instalación de una versión 5.1 de MySQL a través del código fuente
-     - Arranque del servidor MySQL 
-     - Configuración del autoarranque del servidor MySQL
-     - Incorporación de las herramientas clientes al PATH 
-     - Configuración del lenguaje de los mensajes SGBD
-   - Instalación de una versión 5.6 de MySQL desde código fuente 
-   - Configuración de la seguridad post-instalación 
-   - Ficheros Log en MySQL
-     - El log de errores
-     - El log general de consultas
-     - El registro de consultas lentas 
-     - El log binario
-   - Instalación de phpMyAdmin 
-   - Prácticas
-** Acceso a la información en MySQL
-   - El acceso a la información 
-   - Creación de usuarios
-     - Los nombres de cuenta
-     - Borrado de usuarios 
-     - Modificación de usuarios
-   - Los privilegios
-     - El sistema de privilegios de MySQL 
-     - Gestión de permisos con phpMyAdmin
-     - Uso de conexiones cifradas mediante SSL
-   - El catálogo de metadatos de MySQL 
-   - Las vistas 
-   - Prácticas
-** Automatización de tareas en MySQL. Scripts de administración
-   - Los scripts o guiones 
-   - Script SQL en MySQL
-     - Ejecución de scripts SQL en MySQL
-   - Scripts de Sistema Operativo para el DBA de MySQL 
-   - Server Side Scripting. Otro tipo de scripts
-   - Herramientas gráficas para scripts. MySQL Workbench
-     - Creación automática de scripts SQL con MySQL Workbench
-     - Creación automática de scripts de servidor Python con MySQLWorkbench
-   - Métodos de ejecución de scripts
-     - Elección del método de ejecución adecuado
-   - Scripts para el DBA
-     - Los scripts y las notificaciones a través del correo electrónico
-     - Scripts para backups 
-     - Scripts de mantenimiento 
-     - Scripts para Logs
-   - Prácticas
-** Tuning de MySQL
-   - Introducción al tuning de bases de datos
-     - ¿Cómo se optimiza MySQL Server?
-   - Elementos susceptibles de ser optimizados
-     - El motor de almacenamiento 
-     - El software 
-     - La caché y la tasa de aciertos
-     - Los buffers 
-     - La red 
-     - Plantillas de parámetros preconfiguradas
-   - El planificador. Análisis de consultas
-     - Las consultas lentas. SLOW QUERY LOG
-   - Los índices
-     - El script mysqlisxchk 
-     - El comando ANALYZE TABLE
-   - La fragmentación de la tablas
-     - El comando OPTIMIZE TABLE
-   - El script mysqltuner 
-   - Consejos para optimizar 
-   - Prácticas
-** Bases de datos Distribuidas y Replicadas con MySQL
-   - SGBD distribuidos
-     - Componentes de una BBDD distribuida
-   - Creación de bases de datos distribuidas: MySQL Cluster 
-   - Instalación de un cluster MySQL 
-   - Mantenimiento y gestión de un cluster MySQL
-     - Control de un nodo de gestión 
-     - Parada y arranque de un nodo 
-     - Control de un nodo SQL 
-     - Control de un nodo de datos
-   - La replicación de los datos 
-   - Configuración de la replicación en MySQL 
-   - Herramientas de gestión: MySQL Monitor
-     - Descarga de MySQL Monitor Service Manager y sus agentes 
-     - Instalación y configuración del Service Manager 
-     - Puesta en marcha del Service Manager 
-     - Instalación y configuración de los agentes
-   - Prácticas
-** Instalación y configuración de Oracle
-   - Funciones de Oracle
-   - Instalación y configuración de Oracle
-     - Prerrequisitos de la instalación de Oracle 
-     - El asistente para la instalación de Oracle 
-     - La postinstalación
-   - Puesta en marcha: Un poco de arquitectura
-     - Estructura de una instancia en Oracle 
-     - Configuración manual de la instancia 
-     - Creación de la base de datos 
-     - Estados de una instancia 
-     - Ficheros que componen la base de datos
-   - Configuración de la red: El listener
-     - El fichero tnsnames
-   - Apagado de una base de datos 
-   - Configuración automática de la instancia a través del asistente DBCA 
-   - Prácticas
-** Estructura de la información y acceso en Oracle
+** Capítulo 1. Caracterización de redes
+1.1. La comunicación
+1.2. Concepto de red. Ventajas
+1.3. Topología de red
+1.4. Clasificación general de redes
+1.5. Evolución del trabajo en red (networking)
+1.6. Sistemas de numeración
 
-   - Los métodos de autentificación en Oracle 
-   - La gestión de los usuarios en Oracle
-     - El sistema de privilegios de Oracle 
-     - El fichero de passwords orapwd
-   - Los roles 
-   - Los perfiles 
-   - Gestión del espacio de almacenamiento
-   - Sentencias SQL para la gestión de almacenamiento
-   - El catálogo de metadatos
-     - Las vistas estáticas 
-     - Las vistas dinámicas
-   - Oracle Enterprise Manager Database Control
-     - El servicio dbconsole
-   - Prácticas
-** Automatización de tareas y creación de scripts en Oracle
-   - Herramientas para creación de scripts
-     - Herramientas de texto
-   - Planificación de tareas de administración con scripts 
-   - Scripts en BASH para Oracle
-     - Script para inicio y parada automática de Oracle 
-     - Arranque de más de una instancia 
-     - Ejemplo de script avanzado
-   - Scripts para backups
-     - Ejemplo de script para backup físico en frío 
-     - Scripts para backups lógicos. El datapump
-   - El Recovery Manager (rman)
-     - Funcionamiento de rman 
-     - Instalación del catálogo de recuperación de rman 
-     - Scripts con RMAN. Backups y Restores 
-     - Script para backup completo con rman
-     - Consulta de los backups disponibles 
-     - Script con RMAN para recuperación
-   - Eventos de sistema 
-   - Excepciones servererror
-   - Prácticas
-** Tuning en Oracle
-   - Herramientas de monitorización de Oracle
-     - Consolas gráficas: Enterprise Manager, Grid Control, Toad
-     - Vistas dinámicas
-     - dbms_monitor 
-     - La traza 10046: alter session, oradebug, sql_trace 
-     - Informes AWR
-   - Elementos y parámetros susceptibles de ser monitorizados
-     - Caso práctico 1 
-     - Caso práctico 2
-   - Optimización en Oracle
-     - Instancia 
-     - Recursos 
-     - Estadísticas 
-     - Particionamiento y paralelización 
-     - Consultas
-   - Herramientas y sentencias para la gestión de índices 
-   - Herramientas para la creación de alertas de rendimiento
-   - Prácticas
-** Oracle y las BBDD distribuidas
-   - Bases de datos e instancias distribuidas en Oracle 
-   - Técnicas de fragmentación 
-   - Consultas distribuidas
-     - DB Links
-     - Ejecución de consultas distribuidas
-   - Transacciones distribuidas
-     - TWO-PHASE COMMIT 
-     - Ejemplo de transacción distribuida
-   - Optimización de consultas sobre bases de datos distribuidas
-     - Optimización mediante consultas derivadas 
-     - Optimización mediante hints
-   - Prácticas
+** Capítulo 2. Arquitecturas de red
+2.1. Organizaciones de estándares
+2.2. Arquitectura de red
+2.3. Arquitectura TCP/IP
+2.4. Modelo de referencia OSI
+2.5. Comparativa del modelo OSI con la arquitectura TCP/IP
+2.6. Captura de tráfico con Wireshark
+2.7. Captura de tráfico http con Packet Tracer
+
+** Capítulo 3. Redes de área Local
+3.1. Introducción a las LAN
+3.2. Proyecto IEEE 802
+3.3. La familia Ethernet
+3.4. Token Bus
+3.5. Token Ring
+3.6. FDDI
+3.7. WLAN. Wireless LAN
+
+** Capítulo 4. Nivel Físico
+4.1. Introducción a las señales
+4.2. Tipos de transmisión
+4.3. Técnicas de transmisión
+4.4. Medios de transmisión
+4.5. Limitaciones de los medios de transmisión
+
+** Capítulo 5. Cableado estructurado
+5.1. Introducción
+5.2. Espacios y recorridos para telecomunicaciones en edificios comerciales
+5.3. Cableado de telecomunicaciones en edificios comerciales
+
+** Capítulo 6. Nivel de Enlace
+6.1. Funciones del nivel de enlace
+6.2. Tramado
+6.2.1. Formato de trama PPP para redes WAN
+6.2.2. Formato de trama Ethernet
+6.2.3. Formato de trama 802.11 (Wi-Fi)
+6.3. Control de acceso al medio
+6.3.1. Multiplexación FDM y TDM
+6.3.2. Paso de testigo
+6.3.3. CSMA/CD
+6.3.4. CSMA/CA
+6.4. Control de flujo
+6.5. Control de errores
+6.6. Direccionamiento físico
+
+** Capítulo 7. El switch. STP. VLAN. Diseño de una red
+7.1. El switch
+7.1.1. Evolución histórica
+7.1.2. Funcionamiento
+7.1.3. Características del switch
+7.1.4. Técnicas de reenvío
+7.1.5. Tipos de switches
+7.1.6. Configuración básica de un switch gestionable CISCO
+7.2. VLAN. Red LAN virtual
+7.2.1. Concepto de VLAN
+7.2.2. Tipos de VLAN según membresía
+7.2.3. Tipos de enlaces
+7.2.4. Tipos de VLAN según su función
+7.2.5. Protocolo VTP. Configuración dinámica de VLANs
+7.3. Diseño de una red jerárquica
+7.3.1. Capas de una red jerárquica
+7.3.2. Ventajas del diseño de una red jerárquica
+7.3.3. Principios de diseño de redes jerárquicas
+7.3.4. Características de los switeches de cada capa
+7.3.5. Protocolo SNMP. Monitores de red
+
+** Capítulo 8. Nivel de red. Direccionamiento IPv4 e IPv6. Adaptadores de red
+8.1. Nivel de red. Objetivo, funciones y protocolos
+8.2. Protocolo IP
+8.2.1. Características
+8.2.2. Formato del datagrama IPv4
+8.2.3. Formato del datagrama IPv6
+8.3. Direccionamiento IPv4
+8.3.1. Direcciones IPv4
+8.3.2. Clases
+8.3.3. Direcciones reservadas
+8.3.4. Direcciones especiales
+8.3.5. Direcciones públicas
+8.3.6. Direcciones privadas
+8.5.7. Máscaras de subred
+8.4. Subredes
+8.4.1. Necesidad de las subredes
+8.4.2. Método para la creación de subredes (subnetting)
+8.4.3. Herramientas para subnetting
+8.5. Configuración del adaptador de red
+8.5.1. Configuración en Windows
+8.5.2. Configuración en Linux
+8.6. Asignación dinámica de direcciones (DHCP)
+8.7. Protocolo ARP
+8.8. Protocolo ICMP. Diagnóstico de redes
+8.8.1. Mensajes de solicitud y respuesta de eco (Echo y Echo Reply)
+8.8.2. Mensajes de tiempo excedido (Time exceeded)
+8.9. Direccionamiento IPv6
+8.9.1. Formatos de direcciones IPv6
+8.9.2. Tipos de direcciones IPv6
+8.9.3. Índice de zona
+8.9.4. Mecanismos de transición IPv4 a IPv6
+
+** Capítulo 9. El router. Configuración
+9.1. El router
+9.1.1. Introducción
+9.1.2. Arquitectura del router
+9.1.3. Nivel de operación
+9.1.4. Funcionamiento
+9.1.5. Tipos de router según su función
+9.2. Configuración de routers CISCO
+9.2.1. Modos de operación
+9.2.2. Modo usuario EXEC
+9.2.3. Modo privilegiado EXEC
+9.2.4. Modo configuración global
+9.2.5. Modo configuración de una interfaz
+9.2.6. Modo configuración de una línea
+9.2.7. Configuración de una conexión SSH
+9.2.8. Configuración del servicio DHCP
+9.3. Router Linksys
+
+** Capítulo 10. Protocolos de enrutamiento
+10.1. Concepto de enrutamiento
+10.2. Tipos de enrutamiento
+10.2.1. Enrutamiento estático
+10.2.2. Enrutamiento dinámico
+10.2.3. Características de un protocolo de enrutamiento
+10.3. Mejoras en el diseño de redes y en el enrutamiento
+10.3.1. VLSM (Variable Length Subnetting Mask)
+10.3.2. CIDR (Clasless InterDomain Routing)
+10.4. Clasificación de los protocolos de enrutamiento
+10.4.1. Protocolos interiores y exteriores
+10.4.2. Protocolos basados en vector-distancia
+10.4.3. Protocolos basados en estado del enlace
+10.4.4. Protocolos híbridos
+10.5. RIPv1
+10.6. RIPv2
+10.6.1. RIPng
+10.7. OSPF
+10.8. BGP
+10.9. Enrutamiento entre VLANs
+
+** Capítulo 11. Seguridad: ACL, Firewall y DMZ
+11.1. ACL. Listas de control de acceso
+11.1.1. Definición y características
+11.1.2. Funcionamiento de las ACL
+11.1.3. ACL estándar
+11.1.4. ACL extendida
+11.2. Firewall y DMZ
+11.2.1. Definición
+11.2.2. Arquitectura de Firewalls
+
+** Capítulo 12. Acceso a Internet. NAPT
+12.1. Técnicas de conmutación
+12.1.1. Conmutación de circuitos
+12.1.2. Conmutación de paquetes
+12.2. Tecnologías de acceso a Internet
+12.2.1. La red telefónica conmutada (RTC)
+12.2.2. La red digital de servicios integrados (RDSI)
+12.2.3. La línea de abonado digital (DSL)
+12.2.4. FTTx. Accesos mediante fibra
+12.2.5. La red híbrida de fibra y cobre (HFC)
+12.2.6. La red inalámbrica (WiMAX)
+12.2.7. El Sistema Universal de Telecomunicaciones Móviles (UTMS)
+12.3. Traducción de direcciones NAT/NAPT
+12.3.1. Funcionamiento de NAPT
+12.3.2. Configuración de NAPT en routers CISCO
 
 
 * Contenidos
@@ -482,44 +478,9 @@ f) Se han descrito las características de las tecnologías UMTS y HSDPA.
 * Contenidos básicos
 - Incluídos solo como referencia
 - No son aplicables en la Comunidad de Madrid
-** Instalación y configuración de un sistema gestor de base de datos:
-- Funciones del sistema gestor de base de datos (SGBD). Componentes. Tipos.
-- Arquitectura del sistema gestor de base de datos. Arquitectura ANSI/SPARC.
-- Sistemas gestores de base de datos comerciales y libres.
-- Instalación y configuración de un SGBD. Parámetros relevantes.
-- Instalación de un SGBD de dos capas.
-- Configuración de los parámetros relevantes.
-- Estructura del diccionario de datos.
-- Ficheros LOG.
-** Acceso a la información:
-- Creación, modificación y eliminación de vistas.
-- Creación y eliminación de usuarios.
-- Asignación y desasignación de derechos a usuarios. Puntos de acceso al sistema.
-- Definición de roles. Asignación y desasignación de roles a usuarios.
-- Normativa legal vigente sobre protección de datos.
-** Automatización de tareas: construcción de guiones de administración:
-- Herramientas para creación de guiones; procedimientos de ejecución.
-- Planificación de tareas de administración mediante guiones.
-- Eventos.
-- Disparadores.
-- Excepciones.
-** Optimización del rendimiento: monitorización y optimización:
-- Herramientas de monitorización disponibles en el sistema gestor.
-- Elementos y parámetros susceptibles de ser monitorizados.
-- Optimización.
-- Herramientas y sentencias para la gestión de índices.
-- Herramientas para la creación de alertas de rendimiento.
-** Aplicación de criterios de disponibilidad a bases de datos distribuidas y replicadas:
-- Bases de datos distribuidas.
-- Tipos de SGBD distribuidos.
-- Componentes de un SGBD distribuido.
-- Técnicas de fragmentación.
-- Técnicas de asignación.
-- Consulta distribuida.
-- Transacciones distribuidas.
-- Optimización de consultas sobre bases de datos distribuidas.
-- Replicación.
-- Configuración del «nodo maestro» y los «nodos esclavos».
+
+
+
 * Orientaciones pedagógicas.                   :noexport:
 Este módulo profesional contiene la formación necesaria para desempeñar la función de administrar sistemas gestores de bases de datos.
 La administración de sistemas gestores de base de datos incluye aspectos como:
