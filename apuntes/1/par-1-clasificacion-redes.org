@@ -75,7 +75,7 @@ Características:
   - Asignación estática: tiempo dividido en cuantos. 
     - Un host utiliza el medio en su cuanto. Si no lo utiliza, se queda sin usar.
   - Asignación dinámica: bajo demanda.
-- Limite máximo de usuarios
+- Límite máximo de usuarios: colisiones
 - Privacidad
 
 #+REVEAL: split
@@ -290,6 +290,9 @@ http://www.chrisharrison.net/index.php/Visualizations/InternetMap
 - Un bus físico con uso de testigo.
 - El equipo que tiene el testigo, es el poseedor de los permisos para transmitir en el medio.
 - Cuando termina, transmite el testigo a otro equipo
+
+#+attr_html: :width 40%
+[[file:carga-ethernet.png]]
 
 * Extensión de la red
 - *PAN* /Personal Area Network/
